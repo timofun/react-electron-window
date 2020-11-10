@@ -63,7 +63,7 @@ const FileList = ( { files, onFileClick, onSaveEdit, onFileDelete }) => {
     if(escPressed && editStatus) {
       closeSearch(editItem)
     }
-  })
+  }, [])
   useEffect(() => {
     const newFile = files.find(file => file.isNew)
     if (newFile) {
