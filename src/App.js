@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { flattenArr, objToArr, timestampToString } from './utils/helper'
-const { remote, ipcRenderer } = window.require('electron')
 import FileSearch from './components/FileSearch'
 import FileList from './components/FileList'
+const { remote, ipcRenderer } = window.require('electron')
 function App() {
   const [ files, setFiles ] = useState(fileStore.get('files') || {})
   const [ activeFileID, setActiveFileID ] =useState('')
