@@ -1,0 +1,14 @@
+directories:
+  output: dist
+  buildResources: build
+appId: reactDoc
+productName: React文档
+copyright: 'Copyright © 2019 ${author}'
+files:
+  - filter:
+      - build/**/*
+      - node_modules/**/*
+      - settings/**/*
+      - package.json
+extends: null
+electronVersion: 10.1.5
